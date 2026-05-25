@@ -8,20 +8,20 @@ export default function Home() {
       <main className="max-w-4xl mx-auto px-6 py-12 md:py-20">
         <article className="relative">
           {/* Header info */}
-          <div className="text-center max-w-2xl mx-auto mb-10">
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-stone-900 leading-tight mb-6">
+          <div className="text-center max-w-full mx-auto mb-6">
+            <h1 className="font-serif text-[25px] sm:text-4xl md:text-5xl font-bold tracking-tight text-stone-900 leading-tight mb-6">
               A Beleza de Caminhar Juntos: O Poder da Comunidade
             </h1>
 
             <p className="text-stone-600 text-lg leading-relaxed mb-6 font-serif italic">
-              "Em um mundo cada vez mais conectado por telas, mas distante em
+              Em um mundo cada vez mais conectado por telas, mas distante em
               presença, redescobrir o valor de caminhar em comunhão real é um
-              sopro de vida para a alma."
+              sopro de vida para a alma.
             </p>
           </div>
 
           {/* Hero Cover Image Container */}
-          <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl shadow-stone-200 border border-stone-200/50 mb-12 group">
+          <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-xl shadow-stone-200 border border-stone-200/50 mb-6 group">
             <div className="absolute inset-0 bg-linear-to-t from-stone-900/40 via-transparent to-transparent opacity-60 z-10 pointer-events-none" />
             <img
               src="/artigo_comunidade.png"
@@ -56,7 +56,7 @@ export default function Home() {
               </p>
 
               {/* Subheading */}
-              <h2 className="font-serif text-2xl font-bold text-stone-900 pt-6 pb-2">
+              <h2 className="font-serif text-2xl font-bold text-stone-900 my-5">
                 O Sentido de Pertencimento
               </h2>
 
@@ -70,7 +70,7 @@ export default function Home() {
               </p>
 
               {/* Pull Quote */}
-              <blockquote className="border-l-4 border-amber-500 pl-6 my-10 font-serif italic text-stone-900 text-xl sm:text-2xl leading-relaxed bg-amber-50/30 py-4 pr-4 rounded-r-xl">
+              <blockquote className="border-l-4 border-amber-500 pl-6 my-6 font-serif italic text-stone-900 text-xl sm:text-2xl leading-relaxed bg-amber-50/30 py-4 pr-4 rounded-r-xl">
                 &ldquo;Porque, onde estiverem dois ou três reunidos em meu nome,
                 aí estou eu no meio deles.&rdquo;
                 <span className="block not-italic text-xs font-sans font-bold uppercase tracking-wider text-amber-800 mt-2">

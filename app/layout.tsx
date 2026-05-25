@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${sans.variable} ${serif.variable}`}>
-      <body className="font-sans antialiased text-stone-800 bg-stone-50">
+      <body className="font-sans antialiased text-stone-800 bg-white">
         {children}
       </body>
     </html>

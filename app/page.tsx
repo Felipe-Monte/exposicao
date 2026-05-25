@@ -48,7 +48,7 @@ export default function Home() {
           &ldquo;Porque, onde estiverem dois ou três reunidos em meu nome, aí
           estou eu no meio deles.&rdquo;
           <span className="block not-italic text-[10px] font-sans font-semibold uppercase tracking-widest text-stone-400 mt-1">
-            Mateus 18:20
+            Mt 18, 20
           </span>
         </blockquote>
       </footer>

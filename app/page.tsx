@@ -1,9 +1,6 @@
 export default function Home() {
   return (
-    <main className="relative h-dvh flex flex-col justify-center gap-8 md:gap-16 overflow-hidden px-6 py-8 text-center bg-stone-50">
-      {/* Background Decorative Ethereal Glows */}
-      <div className="absolute top-[-20%] left-[-20%] w-[60%] h-[60%] rounded-full bg-amber-100/60 blur-[130px] pointer-events-none" />
-      <div className="absolute bottom-[-20%] right-[-20%] w-[60%] h-[60%] rounded-full bg-indigo-50/40 blur-[130px] pointer-events-none" />
+    <main className="relative h-dvh flex flex-col justify-center gap-8 md:gap-16 overflow-hidden px-6 py-8 text-center">
 
       {/* Main Content */}
       <section className="relative z-10 max-w-xl mx-auto flex flex-col items-center">

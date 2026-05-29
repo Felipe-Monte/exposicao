@@ -54,7 +54,7 @@ export default function Section1() {
 
       <ImageFrame
         src="/images/foto-2.webp"
-         imageClass="w-full h-fit sm:h-[450px] object-contain"
+        imageClass="w-full h-fit sm:h-[450px] object-contain"
         alt="Ilustração de uma capela serena sob o amanhecer dourado"
         hasShadow
         hasOverlay
@@ -145,21 +145,19 @@ export default function Section1() {
       <ImageFrame
         src="/images/foto-5.webp"
         alt="Ilustração de uma capela serena sob o amanhecer dourado"
-        marginClass="mt-6 mb-6"
         priority
       />
       <ImageFrame
         src="/images/foto-6.webp"
         alt="Ilustração de uma capela serena sob o amanhecer dourado"
         imageClass="w-full h-[320px] sm:h-[450px] object-contain"
-        marginClass="mt-6 mb-6"
         priority
       />
       <ImageFrame
         src="/images/foto-7.webp"
         alt="Ilustração de uma capela serena sob o amanhecer dourado"
         imageClass="w-full h-fit sm:h-[450px] lg:h-fit object-contain"
-        marginClass="mt-6 mb-2"
+        marginClass="mb-2"
         priority
       />
       <p className="text-center text-xs sm:text-sm italic mt-2 mb-6 font-sans">

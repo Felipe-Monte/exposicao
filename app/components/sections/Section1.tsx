@@ -194,6 +194,12 @@ export default function Section1() {
       <p className="text-center text-xs sm:text-sm italic mt-2 mb-6 font-sans">
         Casa de São José de Anchieta em Tenerife, ilhas Canárias, Espanha.
       </p>
+
+      {/* fim da Seção 1 */}
+      <hr
+        className="w-16 border-t border-stone-200/60 mx-auto mt-3 mb-3"
+        aria-hidden="true"
+      />
     </>
   );
 }

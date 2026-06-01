@@ -22,10 +22,18 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-stone-50 text-stone-800 font-sans antialiased flex flex-col justify-between">
-      <main className="max-w-4xl w-full mx-auto px-4 py-12 md:py-20 flex-1 flex flex-col items-center justify-center">
+    <div
+      className={`bg-stone-50 text-stone-800 font-sans antialiased flex flex-col ${
+        !showSection ? 'h-dvh overflow-hidden' : 'min-h-screen justify-between'
+      }`}
+    >
+      <main
+        className={`max-w-4xl w-full mx-auto px-4 flex-1 flex flex-col items-center justify-center ${
+          !showSection ? 'h-full py-0' : 'py-12 md:py-20'
+        }`}
+      >
         {!showSection ? (
-          <div className="text-center max-w-2xl mx-auto flex flex-col items-center justify-center gap-8 py-20 md:py-32">
+          <div className="text-center max-w-2xl mx-auto flex flex-col items-center justify-center gap-8 px-4">
             <div className="space-y-4">
               <span className="text-xs uppercase tracking-widest text-amber-600 font-semibold font-sans">
                 Exposição Virtual

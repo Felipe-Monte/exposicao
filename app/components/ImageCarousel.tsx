@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface CarouselImage {
   src: string;
@@ -67,19 +68,7 @@ export default function ImageCarousel({
           className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-white/80 hover:bg-white backdrop-blur-sm border border-stone-200/40 shadow-md text-stone-800 transition-all duration-300 md:opacity-0 md:group-hover:opacity-100 md:-translate-x-2 md:group-hover:translate-x-0 focus:outline-none focus:ring-2 focus:ring-amber-500/50 cursor-pointer"
           aria-label="Imagem anterior"
         >
-          <svg
-            className="w-5 h-5 text-stone-800"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2.5}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
+          <ChevronLeft className="w-5 h-5 text-stone-800 stroke-[2.5]" />
         </button>
       )}
 
@@ -90,19 +79,7 @@ export default function ImageCarousel({
           className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-2.5 rounded-full bg-white/80 hover:bg-white backdrop-blur-sm border border-stone-200/40 shadow-md text-stone-800 transition-all duration-300 md:opacity-0 md:group-hover:opacity-100 md:translate-x-2 md:group-hover:translate-x-0 focus:outline-none focus:ring-2 focus:ring-amber-500/50 cursor-pointer"
           aria-label="Próxima imagem"
         >
-          <svg
-            className="w-5 h-5 text-stone-800"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2.5}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
+          <ChevronRight className="w-5 h-5 text-stone-800 stroke-[2.5]" />
         </button>
       )}
 

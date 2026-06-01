@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import ImageCarousel from '../ImageCarousel';
 
 interface ImageFrameProps {
   src: string;
@@ -41,6 +44,40 @@ function ImageFrame({
 }
 
 export default function Section1() {
+  const cathedralPhotos = [
+    {
+      src: '/images/foto-5.webp',
+      alt: 'Catedral de San Cristóbal de La Laguna - Fachada e Entorno',
+    },
+    {
+      src: '/images/foto-6.webp',
+      alt: 'Catedral de San Cristóbal de La Laguna - Detalhe da Arquitetura',
+    },
+    {
+      src: '/images/foto-7.webp',
+      alt: 'Catedral de San Cristóbal de La Laguna - Vista e Fachada Lateral',
+    },
+  ];
+
+  const anchietaPharmacyPhotos = [
+    {
+      src: '/images/foto-11.webp',
+      alt: 'Anchieta Farmacopeia',
+    },
+    {
+      src: '/images/foto-12.webp',
+      alt: 'Anchieta Farmacopeia',
+    },
+    {
+      src: '/images/foto-13.webp',
+      alt: 'Anchieta Farmacopeia',
+    },
+    {
+      src: '/images/foto-14.webp',
+      alt: 'Anchieta Farmacopeia',
+    },
+  ];
+
   return (
     <>
       <ImageFrame
@@ -132,7 +169,7 @@ export default function Section1() {
 
       <ImageFrame
         src="/images/foto-4.webp"
-        alt="Ilustração de uma capela serena sob o amanhecer dourado"
+        alt="Universidade de Coimbra"
         imageClass="w-full h-fit sm:h-[450px] object-contain"
         marginClass="mt-6 mb-2"
         priority
@@ -142,24 +179,8 @@ export default function Section1() {
         acima).
       </p>
 
-      <ImageFrame
-        src="/images/foto-5.webp"
-        alt="Ilustração de uma capela serena sob o amanhecer dourado"
-        priority
-      />
-      <ImageFrame
-        src="/images/foto-6.webp"
-        alt="Ilustração de uma capela serena sob o amanhecer dourado"
-        imageClass="w-full h-[320px] sm:h-[450px] object-contain"
-        priority
-      />
-      <ImageFrame
-        src="/images/foto-7.webp"
-        alt="Ilustração de uma capela serena sob o amanhecer dourado"
-        imageClass="w-full h-fit sm:h-[450px] lg:h-fit object-contain"
-        marginClass="mb-2"
-        priority
-      />
+      <ImageCarousel images={cathedralPhotos} />
+
       <p className="text-center text-xs sm:text-sm italic mt-2 mb-6 font-sans">
         Catedral de San Cristóbal de La Laguna (referente às três imagens
         acima).
@@ -186,7 +207,7 @@ export default function Section1() {
 
       <ImageFrame
         src="/images/foto-8.webp"
-        alt="Ilustração de uma capela serena sob o amanhecer dourado"
+        alt="Casa de São José de Anchieta em Tenerife"
         imageClass="w-full h-fit sm:h-[450px] object-contain"
         marginClass="mt-6 mb-2"
         priority
@@ -194,6 +215,97 @@ export default function Section1() {
       <p className="text-center text-xs sm:text-sm italic mt-2 mb-6 font-sans">
         Casa de São José de Anchieta em Tenerife, ilhas Canárias, Espanha.
       </p>
+
+      <ImageFrame
+        src="/images/foto-9.webp"
+        alt="Santo Inácio de Loyola"
+        imageClass="w-full h-fit sm:h-[450px] object-contain"
+        marginClass="mt-6 mb-2"
+        priority
+      />
+      <p className="text-center text-xs sm:text-sm italic mt-2 mb-6 font-sans">
+        Santo Inácio de Loyola
+      </p>
+
+      <div className="max-w-2xl mx-auto">
+        <div className="font-serif text-lg text-stone-700 leading-relaxed space-y-6">
+          <p>
+            Em terras lusitanas, no ano de 1551, o jovem José de Anchieta, se
+            encanta com a Companhia de Jesus, fundada por seu primo distante
+            Santo Inácio de Loyola (1491 – 1556), bem como pelos preceitos e as
+            diretrizes de sua vida e ação missionária:{' '}
+            <em>“em tudo amar e servir”</em>. Ao mesmo passo que encontra a
+            vocação missionária e evangelizadora, suas enfermidades também se
+            agravavam:{' '}
+            <em>
+              “[…] ajudava cada dia, oito, dez, mais missas de joelhos, com
+              muito gosto e devoção, ainda que com muito custo de sua saúde.
+              Porque da continuação desse exercício, de ir por essa causa comer
+              tarde e comer pouco, se lhe veio a gerar uma dor numa ilharga (no
+              ser humano, cada um dos lados do corpo, dos quadris aos ombros)
+              que o atormentava muito. […]” tantas vezes fez isso, e com tanta
+              força, por causa da grande fadiga, veio a fazer tão grande abalo
+              nas costas, que as tirou de seu lugar, ficando o espinhaço feito
+              um S […]. Sucedeu-lhe daí grande doença, da qual nem as costas
+              tornavam a seu lugar, nem ele nunca pôde cobrar saúde […]”.
+            </em>{' '}
+            A tuberculose óssea, causadora de dores intensas, associados a um
+            sério acidente: uma escada cai sobre suas costas, agravando ainda
+            mais sua escoliose, colaborando, de forma significativa, sua vinda
+            para a “Terra Brasilis” (Terra do Brasil), onde o clima quente, o
+            calor, assim como a farmácia tupiniquim, ofereceu a este servo de
+            Deus, uma forma de melhor administrar suas enfermidades e suas
+            dores, quando aqui desembarca aos 19 anos, no dia 13 de julho de
+            1553, em Salvador, Bahia, junto ao Governador Duarte da Costa e mais
+            seis irmãos inacianos.
+          </p>
+        </div>
+      </div>
+
+      <ImageFrame
+        src="/images/foto-10.webp"
+        alt="A Chegada do Irmão Anchieta ao Brasil"
+        imageClass="w-full h-fit sm:h-[450px] object-contain"
+        marginClass="mt-6 mb-2"
+        priority
+      />
+      <p className="text-center text-xs sm:text-sm italic mt-2 mb-6 font-sans">
+        A Chegada do Irmão Anchieta ao Brasil (referente à imagem acima)
+      </p>
+
+      <ImageCarousel images={anchietaPharmacyPhotos} />
+
+      <ImageFrame
+        src="/images/foto-15.webp"
+        alt="A Chegada do Irmão Anchieta ao Brasil"
+        imageClass="w-full h-fit sm:h-[450px] object-contain"
+        marginClass="mt-6 mb-2"
+        priority
+      />
+
+      <div className="max-w-2xl mx-auto">
+        <div className="font-serif text-lg text-stone-700 leading-relaxed space-y-6">
+          <p>
+            Em terras brasileiras, durante os 44 anos aqui vividos, o Padre
+            Anchieta exerceu com excelência a missão da vida: a evangelização: a
+            cura espiritual e o cuidado com os enfermos: Padre Anchieta o
+            boticário (farmacêutico). Assim nos descreve o Padre Anchieta sobre
+            sua botica:{' '}
+            <em>
+              “Nossa casa é a botica de todos e, em poucos momentos está quieta
+              a campainha da porta”. Em 2024, o Conselho Federal de Farmácia,
+              declarou oficialmente, São José de Anchieta como padroeiro dos
+              farmacêuticos. “Médico, cirurgião, parteiro, higienista, legista,
+              terapeuta, ginecologo, psquiatra, nosologista, enfermeiro,
+              padioleiro, coveiro, não houve ramo da medicina que não atraísse a
+              divina intuição do padre Anchieta. Mezinhou, operou, sangrou,
+              exumou, curou feridas bravas, cancros, mordeduras, envenenamentos;
+              assistiu aos velhos, sarou feridos de guerra, frechados, combateu
+              pestes, infecções, febres, epidemias”.
+            </em>
+          </p>
+        </div>
+      </div>
 
       {/* fim da Seção 1 */}
       <hr

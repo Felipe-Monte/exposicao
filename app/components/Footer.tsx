@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-stone-900 text-stone-400 px-6 py-6 border-t border-stone-800">
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg bg-amber-500 flex items-center justify-center">
+          <div className="w-7 h-7 rounded-lg bg-[#66AFDA] flex items-center justify-center">
             <svg
               className="w-4 h-4 text-stone-900"
               fill="none"

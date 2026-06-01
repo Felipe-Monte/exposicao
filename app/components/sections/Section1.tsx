@@ -52,7 +52,7 @@ export default function Section1() {
 
       <ImageFrame
         src="/images/foto-2.webp"
-        imageClass="w-full h-fit sm:h-[450px] object-contain"
+        imageClass="w-full h-auto sm:h-[450px] object-contain"
         alt="Ilustração de uma capela serena sob o amanhecer dourado"
         hasShadow
         hasOverlay
@@ -67,7 +67,7 @@ export default function Section1() {
       </div>
 
       <TextArea>
-        <p className="first-letter:text-5xl first-letter:font-serif first-letter:font-bold first-letter:text-amber-600 first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8] first-letter:mt-1">
+        <p className="first-letter:text-5xl first-letter:font-serif first-letter:font-bold first-letter:text-[#66AFDA] first-letter:mr-3 first-letter:float-left first-letter:leading-[0.8] first-letter:mt-1">
           O Santuário Nacional de São José de Anchieta, localizado a 80 Km da
           capital Vitória, no Espírito Santo, é um dos principais polos de
           turismo religioso no Brasil, composto pela maravilhosa Igreja dedicada
@@ -125,7 +125,7 @@ export default function Section1() {
       <ImageFrame
         src="/images/foto-4.webp"
         alt="Universidade de Coimbra"
-        imageClass="w-full h-fit sm:h-[450px] object-contain"
+        imageClass="w-full h-auto sm:h-[450px] object-contain"
         marginClass="mt-6 mb-2"
         priority
       />
@@ -160,7 +160,7 @@ export default function Section1() {
       <ImageFrame
         src="/images/foto-8.webp"
         alt="Casa de São José de Anchieta em Tenerife"
-        imageClass="w-full h-fit sm:h-[450px] object-contain"
+        imageClass="w-full h-auto sm:h-[450px] object-contain"
         marginClass="mt-6 mb-2"
         priority
       />
@@ -171,7 +171,7 @@ export default function Section1() {
       <ImageFrame
         src="/images/foto-9.webp"
         alt="Santo Inácio de Loyola"
-        imageClass="w-full h-fit sm:h-[450px] object-contain"
+        imageClass="w-full h-auto sm:h-[450px] object-contain"
         marginClass="mt-6 mb-2"
         priority
       />
@@ -215,7 +215,7 @@ export default function Section1() {
       <ImageFrame
         src="/images/foto-10.webp"
         alt="A Chegada do Irmão Anchieta ao Brasil"
-        imageClass="w-full h-fit sm:h-[450px] object-contain"
+        imageClass="w-full h-auto sm:h-[450px] object-contain"
         marginClass="mt-6 mb-2"
         priority
       />
@@ -228,7 +228,7 @@ export default function Section1() {
       <ImageFrame
         src="/images/foto-15.webp"
         alt="A Chegada do Irmão Anchieta ao Brasil"
-        imageClass="w-full h-fit sm:h-[450px] object-contain"
+        imageClass="w-full h-auto sm:h-[450px] object-contain"
         marginClass="mt-6 mb-2"
         priority
       />

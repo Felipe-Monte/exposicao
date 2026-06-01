@@ -35,7 +35,7 @@ export default function Home() {
         {!showSection ? (
           <div className="text-center max-w-2xl mx-auto flex flex-col items-center justify-center gap-8 px-4">
             <div className="space-y-4">
-              <span className="text-xs uppercase tracking-widest text-amber-600 font-semibold font-sans">
+              <span className="text-xs uppercase tracking-widest text-[#66AFDA] font-semibold font-sans">
                 Exposição Virtual
               </span>
               <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-stone-900 leading-tight">
@@ -48,7 +48,7 @@ export default function Home() {
 
             <button
               onClick={handleReveal}
-              className="w-full sm:w-auto px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-full cursor-pointer flex items-center justify-center gap-3"
+              className="w-full sm:w-auto px-8 py-4 bg-[#66AFDA] hover:bg-[#529ec9] text-white font-medium rounded-full cursor-pointer flex items-center justify-center gap-3"
             >
               <span>Entrar na Exposição</span>
             </button>
@@ -58,7 +58,7 @@ export default function Home() {
             {/* Cabeçalho do Stepper */}
             <div className="w-full flex flex-col md:flex-row justify-between items-center gap-4 border-b border-stone-200/60 pb-6 mb-2 text-sm">
               <div className="flex flex-col gap-1 text-center md:text-left">
-                <span className="text-xs uppercase tracking-widest text-amber-600 font-semibold font-sans">
+                <span className="text-xs uppercase tracking-widest text-[#66AFDA] font-semibold font-sans">
                   Exposição Virtual
                 </span>
                 <h3 className="font-serif text-lg font-bold text-stone-900">
@@ -78,7 +78,7 @@ export default function Home() {
                     onClick={() => changeSection(num)}
                     className={`px-3 py-1 rounded-full text-xs font-semibold font-sans transition-all duration-300 cursor-pointer ${
                       currentSection === num
-                        ? 'bg-amber-600 text-white shadow-sm'
+                        ? 'bg-[#66AFDA] text-white shadow-sm'
                         : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/60'
                     }`}
                   >
@@ -123,7 +123,7 @@ export default function Home() {
               {currentSection < 4 ? (
                 <button
                   onClick={() => changeSection(currentSection + 1)}
-                  className="w-full sm:w-auto px-6 py-2.5 bg-amber-600 text-white font-medium rounded-full shadow-lg shadow-amber-600/10 cursor-pointer flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto px-6 py-2.5 bg-[#66AFDA] text-white font-medium rounded-full shadow-lg shadow-[#66AFDA]/20 cursor-pointer flex items-center justify-center gap-2"
                 >
                   <span>Próxima Seção</span>
                   <ChevronRight className="w-4 h-4" />

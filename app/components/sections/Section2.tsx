@@ -38,6 +38,21 @@ export default function Section2() {
     },
   ];
 
+  const churchPhotos = [
+    {
+      src: '/images/foto-26.webp',
+      alt: 'Igreja',
+    },
+    {
+      src: '/images/foto-27.webp',
+      alt: 'Igreja',
+    },
+    {
+      src: '/images/foto-28.webp',
+      alt: 'Igreja',
+    },
+  ];
+
   return (
     <>
       <div className="max-w-full mx-auto mb-6">
@@ -108,7 +123,7 @@ export default function Section2() {
           </p>
         </TextArea>
 
-        <ImageFrame src="/images/foto-21.webp" alt="Ubatuba" />
+        <ImageFrame src="/images/foto-22.webp" alt="Ubatuba" />
 
         <TextArea>
           <p>
@@ -143,6 +158,29 @@ export default function Section2() {
             Basílica Primacial de São Salvador, construída entre 1652 -1672.
           </p>
         </TextArea>
+
+        <ImageCarousel images={churchPhotos} />
+
+        <TextArea>
+          <p>
+            Após sua Ordenação Presbiteral, pelas têmporas do verão, adoeceu o
+            padre Anchieta de febre palustre (conhecido como malária), indo
+            convalescer no sítio junto a Nossa Senhora da Escada, próximo a
+            Salvador, donde voltou restabelecido, a encontrar-se junto a Inácio
+            de Azevedo e a seguir de volta para o Sul, na expedição de Mem de
+            Sá, para a conquista do Rio de Janeiro. Nunca ficava ocioso, e, foi
+            nessas circunstâncias que escreveu em seu leito, o primeiros dos
+            seis Poemas Eucarísticos. Nossa Senhora da Escada é uma devoção
+            mariana originária de Portugal, trazida pelos jesuítas do século
+            XVI.
+          </p>
+        </TextArea>
+
+        {/* fim da Seção 2 */}
+        <hr
+          className="w-16 border-t border-stone-200/60 mx-auto mt-3 mb-3"
+          aria-hidden="true"
+        />
       </div>
     </>
   );

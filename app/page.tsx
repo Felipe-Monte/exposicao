@@ -15,10 +15,12 @@ export default function Home() {
   const handleReveal = () => {
     setShowSection(true);
     setCurrentSection(1);
+    window.scrollTo(0, 0);
   };
 
   const changeSection = (num: number) => {
     setCurrentSection(num);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -104,6 +106,7 @@ export default function Home() {
                 <button
                   onClick={() => {
                     setShowSection(false);
+                    window.scrollTo(0, 0);
                   }}
                   className="w-full sm:w-auto px-6 py-2.5 border border-stone-300 text-stone-600 font-medium rounded-full cursor-pointer flex items-center justify-center gap-2"
                 >
@@ -133,6 +136,7 @@ export default function Home() {
                   onClick={() => {
                     setShowSection(false);
                     setCurrentSection(1);
+                    window.scrollTo(0, 0);
                   }}
                   className="w-full sm:w-auto px-8 py-2.5 bg-emerald-600 text-white font-medium rounded-full shadow-lg shadow-emerald-600/15 cursor-pointer flex items-center justify-center gap-2"
                 >

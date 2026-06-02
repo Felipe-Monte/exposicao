@@ -27,32 +27,6 @@ export default function Section2() {
     },
   ];
 
-  const chapelPhotos = [
-    {
-      src: '/images/foto-24.webp',
-      alt: 'Capela',
-    },
-    {
-      src: '/images/foto-25.webp',
-      alt: 'Capela',
-    },
-  ];
-
-  const churchPhotos = [
-    {
-      src: '/images/foto-26.webp',
-      alt: 'Igreja',
-    },
-    {
-      src: '/images/foto-27.webp',
-      alt: 'Igreja',
-    },
-    {
-      src: '/images/foto-28.webp',
-      alt: 'Igreja',
-    },
-  ];
-
   return (
     <>
       <div className="max-w-full mx-auto mb-6">
@@ -124,57 +98,6 @@ export default function Section2() {
         </TextArea>
 
         <ImageFrame src="/images/foto-22.webp" alt="Ubatuba" />
-
-        <TextArea>
-          <p>
-            São José de Anchieta foi uma personalidade e um protagonista
-            fundamental no Brasil Colônia, reconhecido não apenas como
-            missionário jesuítas e Santo, mas também poeta (seus poemas
-            dedicados à Virgem Santa), dramaturgo (pioneiro do teatro no
-            Brasil). Seus versos e suas peças teatrais mesclavam elementos da
-            mitologia das sociedades originárias com elementos do catolicismo. A
-            imagem a seguir, remete-se a Iperoig (atual Ubatuba – SP), momento
-            que o irmão José de Anchieta está como refém de paz entre os membros
-            da confederação dos tamoios, entre 1562 e 1563, durante as
-            negociações de um tratado de paz. Nas areias e Iperoig, nosso Santo
-            escreve o célebre “Poema da Bem – Aventurada Virgem Maria”, contendo
-            5.786 versos, como um voto de sua sobrevivência e de mais uma
-            intercessão da Virgem Maria em sua existência. Sem papel e pena,
-            memorizava diariamente cada verso que escrevia nas areias.
-          </p>
-        </TextArea>
-
-        <ImageFrame src="/images/foto-23.webp" alt="cruz" />
-
-        <ImageCarousel images={chapelPhotos} />
-
-        <TextArea>
-          <p>
-            No dia 06 de junho de 1566, há 460 anos, o irmão José de Anchieta é
-            ordenado jesuíta, aos 32 anos, na antiga Capela do Colégio dos
-            Jesuítas fundada em 1552, em Salvador, na Bahia. Demolida em 1933,
-            hoje, no local, encontra-se o monumento “Cruz Caída”, em homenagem à
-            primitiva catedral. Nesse mesmo centro histórico está a Catedral –
-            Basílica Primacial de São Salvador, construída entre 1652 -1672.
-          </p>
-        </TextArea>
-
-        <ImageCarousel images={churchPhotos} />
-
-        <TextArea>
-          <p>
-            Após sua Ordenação Presbiteral, pelas têmporas do verão, adoeceu o
-            padre Anchieta de febre palustre (conhecido como malária), indo
-            convalescer no sítio junto a Nossa Senhora da Escada, próximo a
-            Salvador, donde voltou restabelecido, a encontrar-se junto a Inácio
-            de Azevedo e a seguir de volta para o Sul, na expedição de Mem de
-            Sá, para a conquista do Rio de Janeiro. Nunca ficava ocioso, e, foi
-            nessas circunstâncias que escreveu em seu leito, o primeiros dos
-            seis Poemas Eucarísticos. Nossa Senhora da Escada é uma devoção
-            mariana originária de Portugal, trazida pelos jesuítas do século
-            XVI.
-          </p>
-        </TextArea>
 
         {/* fim da Seção 2 */}
         <hr

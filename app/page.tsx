@@ -3,6 +3,8 @@
 import { Check, ChevronLeft, ChevronRight, LogOut } from 'lucide-react';
 import { useState } from 'react';
 // import Footer from './components/Footer';
+import Part1 from './components/sections/Part1';
+import Part2 from './components/sections/Part2';
 import Section1 from './components/sections/Section1';
 import Section2 from './components/sections/Section2';
 import Section3 from './components/sections/Section3';
@@ -11,8 +13,17 @@ import Section4 from './components/sections/Section4';
 export default function Home() {
   const [showSection, setShowSection] = useState(false);
   const [currentSection, setCurrentSection] = useState(1);
+  const [exposition, setExposition] = useState<1 | 2>(1);
 
-  const handleReveal = () => {
+  const handleRevealExposition1 = () => {
+    setExposition(1);
+    setShowSection(true);
+    setCurrentSection(1);
+    window.scrollTo(0, 0);
+  };
+
+  const handleRevealExposition2 = () => {
+    setExposition(2);
     setShowSection(true);
     setCurrentSection(1);
     window.scrollTo(0, 0);
@@ -49,10 +60,16 @@ export default function Home() {
             </div>
 
             <button
-              onClick={handleReveal}
+              onClick={handleRevealExposition1}
               className="w-full sm:w-auto px-8 py-4 bg-[#66AFDA] hover:bg-[#529ec9] text-white font-medium rounded-full cursor-pointer flex items-center justify-center gap-3"
             >
-              <span>Entrar na Exposição</span>
+              <span>Entrar na Exposição 1</span>
+            </button>
+            <button
+              onClick={handleRevealExposition2}
+              className="w-full sm:w-auto px-8 py-4 bg-[#66AFDA] hover:bg-[#529ec9] text-white font-medium rounded-full cursor-pointer flex items-center justify-center gap-3"
+            >
+              <span>Entrar na Exposição 2</span>
             </button>
           </div>
         ) : (
@@ -64,17 +81,26 @@ export default function Home() {
                   Exposição Virtual
                 </span>
                 <h3 className="font-serif text-lg font-bold text-stone-900">
-                  {currentSection === 1 &&
+                  {exposition === 1 &&
+                    currentSection === 1 &&
                     'Seção I: Origens, Vocação e Chegada'}
-                  {currentSection === 2 && 'Seção II: A Fundação de São Paulo'}
-                  {currentSection === 3 && 'Seção III: O Apóstolo da Paz'}
-                  {currentSection === 4 && 'Seção IV: O Legado e Milagres'}
+                  {exposition === 1 &&
+                    currentSection === 2 &&
+                    'Seção II: A Fundação de São Paulo'}
+                  {exposition === 1 &&
+                    currentSection === 3 &&
+                    'Seção III: O Apóstolo da Paz'}
+                  {exposition === 1 &&
+                    currentSection === 4 &&
+                    'Seção IV: O Legado e Milagres'}
+                  {exposition === 2 && currentSection === 1 && 'Seção 1'}
+                  {exposition === 2 && currentSection === 2 && 'Seção 2'}
                 </h3>
               </div>
 
               {/* Progress Steps */}
               <div className="flex items-center gap-2 bg-stone-200/50 backdrop-blur-sm px-3 py-1.5 rounded-full border border-stone-200/30">
-                {[1, 2, 3, 4].map((num) => (
+                {(exposition === 1 ? [1, 2, 3, 4] : [1, 2]).map((num) => (
                   <button
                     key={num}
                     onClick={() => changeSection(num)}
@@ -94,10 +120,12 @@ export default function Home() {
               id="secao-container"
               className="relative w-full flex flex-col items-center justify-center"
             >
-              {currentSection === 1 && <Section1 />}
-              {currentSection === 2 && <Section2 />}
-              {currentSection === 3 && <Section3 />}
-              {currentSection === 4 && <Section4 />}
+              {exposition === 1 && currentSection === 1 && <Section1 />}
+              {exposition === 1 && currentSection === 2 && <Section2 />}
+              {exposition === 1 && currentSection === 3 && <Section3 />}
+              {exposition === 1 && currentSection === 4 && <Section4 />}
+              {exposition === 2 && currentSection === 1 && <Part1 />}
+              {exposition === 2 && currentSection === 2 && <Part2 />}
             </article>
 
             {/* Painel de Navegação de Rodapé */}
@@ -123,7 +151,7 @@ export default function Home() {
                 </button>
               )}
 
-              {currentSection < 4 ? (
+              {currentSection < (exposition === 1 ? 4 : 2) ? (
                 <button
                   onClick={() => changeSection(currentSection + 1)}
                   className="w-full sm:w-auto px-6 py-2.5 bg-[#66AFDA] text-white font-medium rounded-full shadow-lg shadow-[#66AFDA]/20 cursor-pointer flex items-center justify-center gap-2"

@@ -90,6 +90,25 @@ export default function Section3() {
     },
   ];
 
+  const sepultamentoAnchietaPhotos = [
+    {
+      src: '/images/foto-49.webp',
+      alt: 'Sepultamento de São José de Anchieta',
+    },
+    {
+      src: '/images/foto-50.webp',
+      alt: 'Sepultamento de São José de Anchieta',
+    },
+    {
+      src: '/images/foto-51.webp',
+      alt: 'Sepultamento de São José de Anchieta',
+    },
+    {
+      src: '/images/foto-52.webp',
+      alt: 'Sepultamento de São José de Anchieta',
+    },
+  ];
+
   const santaQuartoPhotos = [
     {
       src: '/images/foto-46.webp',
@@ -102,6 +121,36 @@ export default function Section3() {
     {
       src: '/images/foto-48.webp',
       alt: 'Quarto de São José de Anchieta',
+    },
+  ];
+
+  const telaAnchietaPhotos = [
+    {
+      src: '/images/foto-57.webp',
+      alt: 'Tela Anchieta',
+    },
+    {
+      src: '/images/foto-58.webp',
+      alt: 'Tela Anchieta',
+    },
+  ];
+
+  const reliquiasPhotos = [
+    {
+      src: '/images/foto-60.webp',
+      alt: 'Relíquias de São José de Anchieta',
+    },
+    {
+      src: '/images/foto-61.webp',
+      alt: 'Relíquias de São José de Anchieta',
+    },
+    {
+      src: '/images/foto-62.webp',
+      alt: 'Relíquias de São José de Anchieta',
+    },
+    {
+      src: '/images/foto-63.webp',
+      alt: 'Relíquias de São José de Anchieta',
     },
   ];
 
@@ -368,6 +417,132 @@ export default function Section3() {
             O dia 09 de junho é reconhecido, de forma oficial pelo Estado
             brasileiro, como o dia de São José de Anchieta, devendo ser
             recordado em todas as escolas como vulto nacional.
+          </p>
+        </TextArea>
+
+        <ImageCarousel images={sepultamentoAnchietaPhotos} />
+
+        <TextArea>
+          <p>
+            Seu corpo foi transladado em 4 dias até a sede dos jesuítas em
+            Vitória por três mil indígenas, sendo o destino final, o antigo
+            Colégio de São Tiago (construído em 1551), seminário e residência
+            dos superiores jesuítas na Capitania do Espírito Santo, atualmente
+            Palácio Anchieta, sede do governo estadual. Essa escolha, assim como
+            tudo o que foi pensado e realizado, representa, a grandeza do nosso
+            Santo, de como era visto e tratado perante suas comunidades nativas:
+            liderança espiritual e política. Ao longo dos séculos foram
+            realizadas diversas intervenções, sobretudo, nas décadas iniciais da
+            República, resultando na atual fachada em estilo eclético.
+          </p>
+        </TextArea>
+
+        <ImageFrame
+          src="/images/foto-53.webp"
+          alt="Lápide de São José de Anchieta"
+        />
+
+        <ImageFrame
+          src="/images/foto-54.webp"
+          alt="Passos de São José de Anchieta"
+        />
+
+        <ImageFrame
+          src="/images/foto-55.webp"
+          alt="Passos de São José de Anchieta mapa"
+        />
+
+        <ImageFrame
+          src="/images/foto-56.webp"
+          alt="Passos de São José de Anchieta"
+        />
+
+        <TextArea>
+          <p>
+            No interior do Palácio Anchieta, em Vitória, há um túmulo e um
+            relicário dedicado ao santo, onde os visitantes podem encontrar uma
+            lápide histórica e um fragmento de seus ossos (uma relíquia de
+            primeiro grau). Buscando reviver a entrega, a espiritualidade e o
+            legado nos ofertado por São José de Anchieta, convidamos nossos
+            irmãos e irmãs para a Romaria “Os Passos de Anchieta”, famoso
+            roteiro de peregrinação e turismo ecológico com 100 km de extensão,
+            localizado no litoral do Espírito Santo. A jornada reconstitui a
+            trilha que o jesuíta São José de Anchieta percorria quinzenalmente
+            nos últimos anos de sua vida, viajando da antiga Vila de Rerigtiba
+            (atual município de Anchieta) até a Vila de Nossa Senhora da
+            Vitória. A caminhada oficial coletiva acontece anualmente durante o
+            feriado de Corpus Christi, durando exatamente quatro dias. Momento
+            de fé, de devoção, de gratidão, de reflexão, de fortalecimento de
+            nossos valores cristãos e de nossa eterna aliança com Deus!!!
+            <br />
+            <br />
+            Aos irmãos e irmãs interessados, recomendamos procurar nas redes
+            sociais, a Associação Brasileira dos Amigos dos Passos de Anchieta
+            (ABAPA), instituição organizadora, que oferece aos peregrinos e
+            romeiros a logística necessária para os quatro dias dos passos
+            (etapas diárias) que compõem o percurso oficial.
+          </p>
+        </TextArea>
+
+        <ImageCarousel images={telaAnchietaPhotos} />
+
+        <TextArea>
+          <p>
+            Em nossa atual Sacristia encontra-se esta maravilhosa obra de arte,
+            do artista plástico paulista Alfredo Cherubín, foi consagrada pelo
+            Papa Francisco S.J., nascido Jorge Mario Bergoglio (1936 – 2025),
+            durante a missa de canonização do Padre Anchieta, no dia 03 abril de
+            2014, no Vaticano. Transformando o “Apóstolo do Brasil” no terceiro
+            santo brasileiro.
+          </p>
+        </TextArea>
+
+        <ImageFrame src="/images/foto-59.webp" alt="São José de Anchieta" />
+
+        <TextArea>
+          <p>
+            São José de Anchieta, além de sua grande vocação missionária e
+            evangelizadora, era também dotado das seguintes potencialidades:
+            pacificador, fundador de cidades, fundador de missões, geógrafo,
+            historiador, boticário, praticante de medicina, botânico,
+            antropólogo, etnólogo, naturalista, ambientalista, ecologista,
+            linguista, escritor, poeta, dramaturgo, professor. Nosso Santo
+            também recebeu os seguintes títulos: padroeiro da cidade de Anchieta
+            dentre outros municípios e paróquias pelo Brasil, padroeiro dos
+            professores, padroeiro dos catequistas, padroeiro dos farmacêuticos.
+            É considerado patrono: da cadeira número 01 da Academia Brasileira
+            de Letras (ABL); é patrono também da cadeira número 01 da Academia
+            Brasileira de Música (ABM); padroeiro nacional: declarado co –
+            padroeiro do Brasil em 2015, pela Conferência Nacional dos Bispos do
+            Brasil e pelo Papa Francisco; Apóstolo do Brasil; Pai da cultura
+            brasileira; Defensor dos Direitos Humanos; Herói Nacional.
+          </p>
+        </TextArea>
+
+        <ImageCarousel images={reliquiasPhotos} />
+
+        <TextArea>
+          <p>
+            São José de Anchieta, conhecido como o “Apóstolo do Brasil”, é
+            cercado por relatos de prodígios extraordinários que aconteceram
+            tanto em vida quanto após a sua morte. Embora sua canonização em
+            2014 pelo Papa Francisco tenha ocorrido por meio de um processo
+            chamado “canonização equipolente” — que dispensa a comprovação de um
+            milagre recente devido ao seu histórico de santidade e culto antigo
+            —, a biografia jesuíta e a tradição popular registram dezenas de
+            fenômenos sobrenaturais.
+          </p>
+        </TextArea>
+
+        <TextArea>
+          <p>
+            Louvado e Glorificado seja Nosso Deus Pai Todo Poderoso!!! Louvado
+            seja Nosso Senhor Jesus Cristo, Filho de Deus!!! Louvada seja Nossa
+            Mãe Virgem Santa!!! Louvada seja Nossa Senhora da Assunção!!!
+            Louvados sejam todos os santos, todas as santas e mártires da Igreja
+            Católica!!! Louvado seja São José de Anchieta!!! Apóstolo do
+            Brasil!!! Poeta da Virgem Maria!!! Ad Maioren Dei Gloriam PARA A
+            MAIOR GLÓRIA DE DEUS
           </p>
         </TextArea>
       </div>

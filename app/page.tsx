@@ -46,36 +46,39 @@ export default function Home() {
         }`}
       >
         {!showSection ? (
-          <div className="text-center max-w-2xl mx-auto flex flex-col items-center justify-center gap-8 px-4">
-            <div className="space-y-4">
+          <div className="text-center max-w-2xl mx-auto flex flex-col items-center justify-center gap-6 px-4">
+            <div className="space-y-5">
               <span className="text-xs uppercase tracking-widest text-[#66AFDA] font-semibold font-sans">
                 Exposição Virtual
               </span>
               <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-stone-900 leading-tight">
-                460 anos da Ordenação Presbiteral de São José de Anchieta
+                Tenda da memória
               </h1>
-              <p className="font-serif text-lg sm:text-xl text-stone-600 italic">
-                “O Padre do Brasil”
-              </p>
             </div>
 
             <button
               onClick={handleRevealExposition1}
               className="w-full sm:w-auto px-8 py-4 bg-[#66AFDA] hover:bg-[#529ec9] text-white font-medium rounded-full cursor-pointer flex items-center justify-center gap-3"
             >
-              <span>Entrar na Exposição 1</span>
+              <div className="flex flex-col items-center justify-center">
+                <span>Entrar na exposição de</span>
+                <span>São José de Anchieta</span>
+              </div>
             </button>
             <button
               onClick={handleRevealExposition2}
               className="w-full sm:w-auto px-8 py-4 bg-[#66AFDA] hover:bg-[#529ec9] text-white font-medium rounded-full cursor-pointer flex items-center justify-center gap-3"
             >
-              <span>Entrar na Exposição 2</span>
+              <div className="flex flex-col items-center justify-center">
+                <span>Entrar na exposição da</span>
+                <span>História da paróquia</span>
+              </div>
             </button>
           </div>
         ) : (
           <div className="w-full flex flex-col items-center gap-6">
             {/* Cabeçalho do Stepper */}
-            <div className="w-full flex flex-col md:flex-row justify-between items-center gap-4 border-b border-stone-200/60 pb-6 mb-2 text-sm">
+            <div className="w-full flex flex-col md:flex-row justify-between items-center gap-4 border-b border-stone-200/60 text-sm">
               <div className="flex flex-col gap-1 text-center md:text-left">
                 <span className="text-xs uppercase tracking-widest text-[#66AFDA] font-semibold font-sans">
                   Exposição Virtual
@@ -83,16 +86,14 @@ export default function Home() {
                 <h3 className="font-serif text-lg font-bold text-stone-900">
                   {exposition === 1 &&
                     currentSection === 1 &&
-                    'Seção I: Origens, Vocação e Chegada'}
-                  {exposition === 1 &&
-                    currentSection === 2 &&
-                    'Seção II: A Fundação de São Paulo'}
+                    'Origens, Vocação e Chegada'}
+                  {exposition === 1 && currentSection === 2 && 'Obras'}
                   {exposition === 1 &&
                     currentSection === 3 &&
-                    'Seção III: O Apóstolo da Paz'}
+                    'Continuação Obras'}
                   {exposition === 1 &&
                     currentSection === 4 &&
-                    'Seção IV: O Legado e Milagres'}
+                    'Legados, milagres, poemas e oração'}
                   {exposition === 2 && currentSection === 1 && 'Seção 1'}
                   {exposition === 2 && currentSection === 2 && 'Seção 2'}
                 </h3>

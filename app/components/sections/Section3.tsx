@@ -159,7 +159,7 @@ export default function Section3() {
       <div className="max-w-full mx-auto mb-6">
         <div className="text-center max-w-full mx-auto mb-6">
           <h1 className="font-serif text-[25px] sm:text-4xl md:text-5xl font-bold tracking-tight text-stone-900 leading-tight">
-            Seção III
+            O Apóstolo da Paz
           </h1>
         </div>
 
@@ -214,8 +214,16 @@ export default function Section3() {
           </p>
         </TextArea>
 
-        <ImageFrame src="/images/foto-29.webp" alt="Fundação rio de janeiro" />
-        <ImageFrame src="/images/foto-30.webp" alt="Fundação rio de janeiro" />
+        <ImageFrame
+          src="/images/foto-29.webp"
+          alt="Fundação rio de janeiro"
+          imageClass="object-contain"
+        />
+        <ImageFrame
+          src="/images/foto-30.webp"
+          alt="Fundação rio de janeiro"
+          imageClass="object-contain"
+        />
 
         <TextArea>
           <p>
@@ -254,11 +262,13 @@ export default function Section3() {
         <ImageFrame
           src="/images/foto-33.webp"
           alt="A aldeia de Reritiba e a igreja de Nossa Senhora da Assunção."
+          imageClass="object-contain"
         />
 
         <ImageFrame
           src="/images/foto-34.webp"
           alt="A aldeia de Reritiba e a igreja de Nossa Senhora da Assunção."
+          imageClass="object-contain"
         />
 
         <TextArea>
@@ -280,6 +290,7 @@ export default function Section3() {
         <ImageFrame
           src="/images/foto-35.webp"
           alt="Construção da igreja de Nossa Senhora da Assunção."
+          imageClass="object-contain"
         />
 
         <TextArea>
@@ -360,7 +371,11 @@ export default function Section3() {
           </p>
         </TextArea>
 
-        <ImageFrame src="/images/foto-45.webp" alt="Capela do Santíssimo" />
+        <ImageFrame
+          src="/images/foto-45.webp"
+          alt="Capela do Santíssimo"
+          imageClass="object-contain"
+        />
 
         <TextArea>
           <p>
@@ -440,21 +455,25 @@ export default function Section3() {
         <ImageFrame
           src="/images/foto-53.webp"
           alt="Lápide de São José de Anchieta"
+          imageClass="object-contain"
         />
 
         <ImageFrame
           src="/images/foto-54.webp"
           alt="Passos de São José de Anchieta"
+          imageClass="object-contain"
         />
 
         <ImageFrame
           src="/images/foto-55.webp"
           alt="Passos de São José de Anchieta mapa"
+          imageClass="object-contain"
         />
 
         <ImageFrame
           src="/images/foto-56.webp"
           alt="Passos de São José de Anchieta"
+          imageClass="object-contain"
         />
 
         <TextArea>
@@ -497,7 +516,11 @@ export default function Section3() {
           </p>
         </TextArea>
 
-        <ImageFrame src="/images/foto-59.webp" alt="São José de Anchieta" />
+        <ImageFrame
+          src="/images/foto-59.webp"
+          alt="São José de Anchieta"
+          imageClass="object-contain"
+        />
 
         <TextArea>
           <p>

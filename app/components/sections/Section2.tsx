@@ -36,7 +36,17 @@ export default function Section2() {
           </h1>
         </div>
 
-        <ImageFrame src="/images/foto-16.webp" alt="Fundação de São Paulo" />
+        <ImageFrame
+          src="/images/foto-16.webp"
+          alt="Fundação de São Paulo"
+          imageClass="object-contain"
+        />
+
+        <ImageFrame
+          src="/images/foto-16.webp"
+          alt="Fundação de São Paulo"
+          imageClass="object-contain"
+        />
 
         <TextArea>
           <p>
@@ -52,7 +62,11 @@ export default function Section2() {
           </p>
         </TextArea>
 
-        <ImageFrame src="/images/foto-17.webp" alt="Tibiriça" />
+        <ImageFrame
+          src="/images/foto-17.webp"
+          alt="Tibiriça"
+          imageClass=" object-contain w-[70%] mx-auto"
+        />
 
         <TextArea>
           <p>
@@ -97,7 +111,11 @@ export default function Section2() {
           </p>
         </TextArea>
 
-        <ImageFrame src="/images/foto-22.webp" alt="Ubatuba" />
+        <ImageFrame
+          src="/images/foto-22.webp"
+          alt="Ubatuba"
+          imageClass="object-contain"
+        />
 
         {/* fim da Seção 2 */}
         <hr

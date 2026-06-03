@@ -7,9 +7,11 @@ export default function Section4() {
   return (
     <>
       <div className="max-w-full mx-auto mb-6">
-        <h2 className="font-serif text-[25px] sm:text-4xl md:text-5xl font-bold tracking-tight text-stone-900 leading-tight">
-          Seção 4
-        </h2>
+        <div className="text-center max-w-full mx-auto mb-6">
+          <h1 className="font-serif text-[25px] sm:text-4xl md:text-5xl font-bold tracking-tight text-stone-900 leading-tight">
+            O Apóstolo do Brasil
+          </h1>
+        </div>
 
         <TextArea>
           <p>
@@ -41,9 +43,12 @@ export default function Section4() {
           </p>
         </TextArea>
 
-        <ImageFrame src="/images/foto-part1.webp" alt="Anchieta Parte 1" />
-        <ImageFrame src="/images/foto-part2.webp" alt="Anchieta Parte 2" />
-        <ImageFrame src="/images/foto-part3.webp" alt="Anchieta Parte 3" />
+        <ImageFrame src="/images/foto-part1.webp" alt="Anchieta Parte 1" 
+        imageClass="object-contain"/>
+        <ImageFrame src="/images/foto-part2.webp" alt="Anchieta Parte 2" 
+        imageClass="object-contain"/>
+        <ImageFrame src="/images/foto-part3.webp" alt="Anchieta Parte 3" 
+        imageClass="object-contain"/>
 
         <TextArea>
           <p>
@@ -102,8 +107,10 @@ export default function Section4() {
           </div>
         </TextArea>
 
-        <ImageFrame src="/images/foto-part4.webp" alt="Anchieta Parte 4" />
-        <ImageFrame src="/images/foto-part5.webp" alt="Anchieta Parte 5" />
+        <ImageFrame src="/images/foto-part4.webp" alt="Anchieta Parte 4" 
+        imageClass="object-contain w-[70%] mx-auto"/>
+        <ImageFrame src="/images/foto-part5.webp" alt="Anchieta Parte 5" 
+        imageClass="object-contain"/>
 
         <TextArea>
           <p>

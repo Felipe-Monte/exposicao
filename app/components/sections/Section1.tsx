@@ -41,10 +41,16 @@ export default function Section1() {
 
   return (
     <>
+      <div className="text-center max-w-full mx-auto mb-6">
+        <h1 className="font-serif text-[25px] sm:text-4xl md:text-5xl font-bold tracking-tight text-stone-900 leading-tight">
+          Início exposição
+        </h1>
+      </div>
+
       <ImageFrame
         src="/images/foto-1.webp"
         alt="Ilustração de uma capela serena sob o amanhecer dourado"
-        imageClass="w-full h-[320px] sm:h-[450px] lg:py-3 object-contain px-3"
+        imageClass="w-full h-[320px] sm:h-[450px] lg:py-3 object-contain px-3 border border-gray-500 rounded-2xl md:rounded-3xl"
         hasShadow
         hasOverlay
         priority

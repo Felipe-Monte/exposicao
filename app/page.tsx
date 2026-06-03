@@ -5,6 +5,7 @@ import { useState } from 'react';
 import ButtonLogout from './components/ButtonLogout';
 // import Footer from './components/Footer';
 import ReadingProgressBar from './components/ReadingProgressBar';
+import WelcomeModal from './components/WelcomeModal';
 import Part1 from './components/sections/Part1';
 import Part2 from './components/sections/Part2';
 import Part3 from './components/sections/Part3';
@@ -17,6 +18,7 @@ export default function Home() {
   const [showSection, setShowSection] = useState(false);
   const [currentSection, setCurrentSection] = useState(1);
   const [exposition, setExposition] = useState<1 | 2>(1);
+  const [showWelcome, setShowWelcome] = useState(true);
 
   const handleRevealExposition1 = () => {
     setExposition(1);
@@ -43,6 +45,7 @@ export default function Home() {
         !showSection ? 'h-dvh overflow-hidden' : 'min-h-screen justify-between'
       }`}
     >
+      <WelcomeModal isOpen={showWelcome} onClose={() => setShowWelcome(false)} />
       <main
         className={`max-w-4xl w-full mx-auto px-4 flex-1 flex flex-col items-center justify-center ${
           !showSection ? 'h-full py-0' : 'py-12 md:py-20'

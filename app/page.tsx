@@ -2,7 +2,9 @@
 
 import { Check, ChevronLeft, ChevronRight, LogOut } from 'lucide-react';
 import { useState } from 'react';
+import ButtonLogout from './components/ButtonLogout';
 // import Footer from './components/Footer';
+import ReadingProgressBar from './components/ReadingProgressBar';
 import Part1 from './components/sections/Part1';
 import Part2 from './components/sections/Part2';
 import Part3 from './components/sections/Part3';
@@ -77,7 +79,15 @@ export default function Home() {
             </button>
           </div>
         ) : (
-          <div className="w-full flex flex-col items-center gap-6">
+          <div className="w-full flex flex-col items-center gap-6 relative">
+            <ReadingProgressBar />
+            <ButtonLogout
+              onClick={() => {
+                setShowSection(false);
+                window.scrollTo(0, 0);
+              }}
+            />
+
             {/* Cabeçalho do Stepper */}
             <div className="w-full flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
               <div className="flex flex-col gap-1 text-center md:text-left">

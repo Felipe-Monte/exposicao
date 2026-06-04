@@ -44,7 +44,7 @@ export default function Section2() {
         />
 
         <ImageFrame
-          src="/images/foto-16.webp"
+          src="/images/foto-64.webp"
           alt="Fundação de São Paulo"
           imageClass="object-contain"
           marginClass="mb-6"

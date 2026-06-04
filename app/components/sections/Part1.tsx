@@ -224,12 +224,225 @@ export default function Part1() {
       <ImageFrame
         src="/images/section2/picture10.webp"
         alt="Dom Heitor Sales"
+        imageClass="object-contain w-[70%] mx-auto"
       />
 
       <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
         Dom Heitor de Araújo Sales - Arcebispo que atuava na Arquidiocese de
         Natal em 2001. Período quando a então área pastoral se transformou em
         Paróquia no dia 09 de Junho de 2001.
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture11.webp"
+        alt="Dom Matias"
+        imageClass="w-[70%] mx-auto"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Dom Matias Patrício de Macêdo
+        <br />
+        Arcebispo da Arquidiocese de Natal entre 2004 a 2011.
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture12.webp"
+        alt="Dom Jacome"
+        imageClass="w-[70%] mx-auto"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Dom Jaime Vieira Rocha
+        <br />
+        Arcebispo da Arquidiocese de Natal entre os anos de 2012 a 2022.
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture13.webp"
+        alt="Dom Jacome"
+        imageClass="w-[70%] mx-auto"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Dom João Santos Cardoso
+        <br />
+        Atual Arcebispo da Arquidiocese de Natal.
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture14.webp"
+        alt="Padre Sávio"
+        imageClass="w-[70%] mx-auto"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Padre Carlos Sávio da Costa Ribeiro
+        <br />
+        Pároco da paróquia desde 2021 até os dias de hoje
+      </p>
+
+      <TextArea>
+        <p>
+          O último passo dessa jornada de emancipação aconteceu no dia 29 de
+          maio de 2005. Sob a liderança de Padre Lucas e com o apoio de
+          missionários dedicados, a comunidade concretizou o sonho de possuir um
+          templo próprio.
+        </p>
+      </TextArea>
+
+      <ImageFrame
+        src="/images/section2/picture15.webp"
+        alt="Serafim"
+        imageClass="w-[70%] mx-auto"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Diácono Serafim de Medeiros Victor
+        <br />
+        Foi um dos fundadores da paróquia e atuou desde o início da
+        evangelização no bairro de Lagoa Nova. Faleceu em janeiro de 2026.
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture16.webp"
+        alt="Manoel Carlos"
+        imageClass="w-[70%] mx-auto"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Diácono Manoel Carlos do Nascimento Silva
+        <br />
+        Diácono da paróquia desde 2024 até os dias de hoje
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture17.webp"
+        alt="Pastoral Jovem"
+        imageClass="object-contain"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Pastoral da Acolhida Jovem
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture18.webp"
+        alt="Pastoral Adulto"
+        imageClass="object-contain"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Pastoral da Acolhida Adulto
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture19.webp"
+        alt="Pastoral Dizimo"
+        imageClass="object-contain"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Pastoral do Dízimo
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture20.webp"
+        alt="Pessoa com Deficiência"
+        imageClass="object-contain"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Pastoral da Pessoa com Deficiência
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture21.webp"
+        alt="Pessoa Social"
+        imageClass="object-contain"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Pastoral Social
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture22.webp"
+        alt="Pastoral Renovação"
+        imageClass="object-contain"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Renovação Carismática Católica (RCC)
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture23.webp"
+        alt="Pequeninos"
+        imageClass="object-contain"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Pequeninos do Senhor
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture24.webp"
+        alt="Palavra"
+        imageClass="object-contain"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Ministério da Palavra
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture25.webp"
+        alt="Coroinha"
+        imageClass="object-contain"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Coroinhas
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture26.webp"
+        alt="Familiar"
+        imageClass="object-contain"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Pastoral Familiar
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture27.webp"
+        alt="Oração"
+        imageClass="object-contain"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Apostolado da Oração
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture28.webp"
+        alt="Extraordinário"
+        imageClass="object-contain"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Ministros Extraordinários da Comunhão Eucarística
+      </p>
+
+      <ImageFrame
+        src="/images/section2/picture29.webp"
+        alt="Jovem"
+        imageClass="object-contain"
+      />
+
+      <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
+        Jovens em missão
       </p>
     </div>
   );

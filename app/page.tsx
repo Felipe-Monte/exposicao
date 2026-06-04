@@ -4,6 +4,7 @@ import { Check, ChevronLeft, ChevronRight, LogOut } from 'lucide-react';
 import { useState } from 'react';
 import ButtonLogout from './components/ButtonLogout';
 // import Footer from './components/Footer';
+import ImageFrame from './components/ImageFrame';
 import ReadingProgressBar from './components/ReadingProgressBar';
 import WelcomeModal from './components/WelcomeModal';
 import Part1 from './components/sections/Part1';
@@ -45,7 +46,10 @@ export default function Home() {
         !showSection ? 'h-dvh overflow-hidden' : 'min-h-screen justify-between'
       }`}
     >
-      <WelcomeModal isOpen={showWelcome} onClose={() => setShowWelcome(false)} />
+      <WelcomeModal
+        isOpen={showWelcome}
+        onClose={() => setShowWelcome(false)}
+      />
       <main
         className={`max-w-4xl w-full mx-auto px-4 flex-1 flex flex-col items-center justify-center ${
           !showSection ? 'h-full py-0' : 'py-12 md:py-20'
@@ -62,9 +66,16 @@ export default function Home() {
               </h1>
             </div>
 
+            <ImageFrame
+              src="/images/foto-22.webp"
+              alt="Ubatuba"
+              imageClass="object-contain"
+              marginClass="mb-0"
+            />
+
             <button
               onClick={handleRevealExposition1}
-              className="w-full sm:w-auto px-8 py-4 bg-[#66AFDA] hover:bg-[#529ec9] text-white font-medium rounded-full cursor-pointer flex items-center justify-center gap-3"
+              className="w-full sm:w-auto px-8 py-4 bg-[#66AFDA] hover:bg-[#529ec9] text-white font-medium rounded-2xl cursor-pointer flex items-center justify-center gap-3"
             >
               <div className="flex flex-col items-center justify-center">
                 <span>Entrar na exposição de</span>
@@ -73,7 +84,7 @@ export default function Home() {
             </button>
             <button
               onClick={handleRevealExposition2}
-              className="w-full sm:w-auto px-8 py-4 bg-[#66AFDA] hover:bg-[#529ec9] text-white font-medium rounded-full cursor-pointer flex items-center justify-center gap-3"
+              className="w-full sm:w-auto px-8 py-4 bg-[#66AFDA] hover:bg-[#529ec9] text-white font-medium rounded-2xl cursor-pointer flex items-center justify-center gap-3"
             >
               <div className="flex flex-col items-center justify-center">
                 <span>Entrar na exposição da</span>

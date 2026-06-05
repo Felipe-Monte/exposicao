@@ -52,7 +52,7 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
             <p className="text-stone-500 font-medium italic pt-4 ">
               Na sequência, nós faremos uma viagem na história de nossa Paróquia
               de 1978 até os dias de hoje. Esse resgate foi feito pelos
-              paroquianos de São José de Anchieta .
+              paroquianos de São José de Anchieta, Natal-RN.
             </p>
           </div>
         </div>

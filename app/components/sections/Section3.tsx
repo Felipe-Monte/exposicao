@@ -618,20 +618,6 @@ export default function Section3() {
           </TextArea>
         </div>
 
-        <div className="w-full mb-6">
-          <TextArea>
-            <p>
-              Louvado e Glorificado seja Nosso Deus Pai Todo Poderoso!!! Louvado
-              seja Nosso Senhor Jesus Cristo, Filho de Deus!!! Louvada seja
-              Nossa Mãe Virgem Santa!!! Louvada seja Nossa Senhora da
-              Assunção!!! Louvados sejam todos os santos, todas as santas e
-              mártires da Igreja Católica!!! Louvado seja São José de
-              Anchieta!!! Apóstolo do Brasil!!! Poeta da Virgem Maria!!! Ad
-              Maioren Dei Gloriam PARA A MAIOR GLÓRIA DE DEUS
-            </p>
-          </TextArea>
-        </div>
-
         {/* fim da Seção 3 */}
         <hr
           className="w-16 border-t border-stone-200/60 mx-auto"

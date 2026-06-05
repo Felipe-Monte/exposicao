@@ -1,5 +1,7 @@
 'use client';
 
+import ImageFrame from './ImageFrame';
+
 interface WelcomeModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -11,9 +13,18 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
   return (
     <div className="fixed inset-0 bg-stone-950/60 backdrop-blur-md z-50 flex items-center justify-center p-4 transition-all duration-300 animate-in fade-in">
       <div
-        className="bg-white p-8 md:p-10 rounded-3xl shadow-2xl max-w-md w-full border border-stone-200/80 flex flex-col items-center text-center gap-6 relative overflow-hidden animate-in zoom-in-95 duration-300"
+        className="bg-white p-8 md:p-10 rounded-3xl shadow-2xl max-w-md w-full border border-stone-200/80 flex flex-col items-center text-center gap-4 relative overflow-hidden animate-in zoom-in-95 duration-300"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Top Image */}
+        <ImageFrame
+          src="/images/foto-22.webp"
+          alt="Anchieta"
+          imageClass="w-full h-[180px] object-cover"
+          marginClass="w-full mb-0"
+          hasShadow={false}
+          priority
+        />
         {/* Text Contents */}
         <div className="space-y-4">
           <div className="space-y-1.5">
@@ -25,22 +36,20 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
             </h2>
           </div>
 
-          <div className="space-y-3 text-stone-600 text-sm leading-relaxed pt-2">
+          <div className=" text-stone-600 text-sm leading-relaxed">
             <p>
               Este acervo foi cedido pelo{' '}
               <strong className="text-stone-800 font-semibold">
                 Santuário Nacional de São José de Anchieta
               </strong>
-              , no estado do Espírito Santo.
-            </p>
-            <p>
-              E seu conteúdo foi organizado pelo historiador{' '}
+              , no estado do Espírito Santo. E seu conteúdo foi organizado pelo
+              historiador{' '}
               <strong className="text-stone-800 font-semibold">
                 Fabrício Noronha
               </strong>{' '}
               e sua equipe.
             </p>
-            <p className="text-stone-500 font-medium italic pt-2 border-t border-stone-100">
+            <p className="text-stone-500 font-medium italic pt-4 border-t border-stone-100">
               Na sequência, nós faremos uma viagem na história de nossa Paróquia
               de 1978 até os dias de hoje.
             </p>

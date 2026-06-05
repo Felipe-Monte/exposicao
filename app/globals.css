@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui;
+  --font-serif: var(--font-serif), ui-serif, Georgia;
+}
+
+::selection {
+  background-color: rgba(102, 175, 218, 0.3);
+}
+

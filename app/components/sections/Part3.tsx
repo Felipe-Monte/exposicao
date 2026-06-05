@@ -17,39 +17,41 @@ export default function Part3() {
           Pároco da paróquia desde 2021 até os dias de hoje
         </p>
 
-        <TextArea>
-          <p>
-            Em 10 de fevereiro de 2021, após 20 anos de missão do Pe. Francisco
-            Lucas, a paróquia recebeu seu segundo pároco: Pe. Carlos Sávio da
-            Costa Ribeiro.
-          </p>
+        <div className="w-full mb-6">
+          <TextArea>
+            <p>
+              Em 10 de fevereiro de 2021, após 20 anos de missão do Pe. Francisco
+              Lucas, a paróquia recebeu seu segundo pároco: Pe. Carlos Sávio da
+              Costa Ribeiro.
+            </p>
 
-          <p>
-            Com o novo pároco, aconteceram reformas na Igreja Matriz,
-            modernização elétrica, instalação de energia solar, reorganização da
-            secretaria paroquial, melhorias litúrgicas, retorno e implantação de
-            movimentos pastorais, além do fortalecimento da evangelização de
-            jovens, adultos e crianças.
-          </p>
+            <p>
+              Com o novo pároco, aconteceram reformas na Igreja Matriz,
+              modernização elétrica, instalação de energia solar, reorganização da
+              secretaria paroquial, melhorias litúrgicas, retorno e implantação de
+              movimentos pastorais, além do fortalecimento da evangelização de
+              jovens, adultos e crianças.
+            </p>
 
-          <p>
-            Nosso pároco é um verdadeiro instrumento de evangelização. Por onde
-            passa, com seus inúmeros dons, consegue tocar corações e aproximar
-            crianças, jovens, adultos da Igreja e do amor de Deus.
-          </p>
+            <p>
+              Nosso pároco é um verdadeiro instrumento de evangelização. Por onde
+              passa, com seus inúmeros dons, consegue tocar corações e aproximar
+              crianças, jovens, adultos da Igreja e do amor de Deus.
+            </p>
 
-          <p>
-            Sua dedicação, alegria e missão evangelizadora deram origem ao
-            movimento “Paróquia em Movimento”, que traduz perfeitamente seu
-            belíssimo trabalho pastoral: uma Igreja viva, acolhedora e em
-            constante missão.
-          </p>
+            <p>
+              Sua dedicação, alegria e missão evangelizadora deram origem ao
+              movimento “Paróquia em Movimento”, que traduz perfeitamente seu
+              belíssimo trabalho pastoral: uma Igreja viva, acolhedora e em
+              constante missão.
+            </p>
 
-          <p>
-            Com a graça de Deus, a paróquia segue crescendo em unidade,
-            participação e missão evangelizadora.
-          </p>
-        </TextArea>
+            <p>
+              Com a graça de Deus, a paróquia segue crescendo em unidade,
+              participação e missão evangelizadora.
+            </p>
+          </TextArea>
+        </div>
 
         <ImageFrame
           src="/images/section2/picture12.webp"

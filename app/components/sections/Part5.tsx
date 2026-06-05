@@ -9,15 +9,15 @@ export default function Part5() {
         </h1>
       </div>
 
-      <ImageFrame src="/images/section5/img1.webp" alt="foto1" />
-      <ImageFrame src="/images/section5/img2.webp" alt="foto2" />
-      <ImageFrame src="/images/section5/img3.webp" alt="foto3" />
-      <ImageFrame src="/images/section5/img4.webp" alt="foto4" />
-      <ImageFrame src="/images/section5/img5.webp" alt="foto5" />
-      <ImageFrame src="/images/section5/img6.webp" alt="foto6" />
-      <ImageFrame src="/images/section5/img8.webp" alt="foto6" />
-      <ImageFrame src="/images/section5/img7.webp" alt="foto6" />
-      <ImageFrame src="/images/section5/img9.webp" alt="foto6" />
+      <ImageFrame src="/images/section5/img1.webp" alt="foto1" imageClass='object-contain'/>
+      <ImageFrame src="/images/section5/img2.webp" alt="foto2" imageClass='object-contain'/>
+      <ImageFrame src="/images/section5/img3.webp" alt="foto3" imageClass='object-contain'/>
+      <ImageFrame src="/images/section5/img4.webp" alt="foto4" imageClass='object-contain'/>
+      <ImageFrame src="/images/section5/img5.webp" alt="foto5" imageClass='object-contain'/>
+      <ImageFrame src="/images/section5/img6.webp" alt="foto6" imageClass='object-contain'/>
+      <ImageFrame src="/images/section5/img8.webp" alt="foto6" imageClass='object-contain'/>
+      <ImageFrame src="/images/section5/img7.webp" alt="foto6" imageClass='object-contain'/>
+      <ImageFrame src="/images/section5/img9.webp" alt="foto6" imageClass='object-contain'/>
     </div>
   );
 }

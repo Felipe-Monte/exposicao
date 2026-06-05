@@ -36,6 +36,7 @@ export default function Part2() {
             alt: 'Construção',
           },
         ]}
+        className="mb-6"
       />
 
       <p className="text-center text-xs sm:text-sm italic mb-6 font-sans">
@@ -44,24 +45,26 @@ export default function Part2() {
         Augusto dos Santos, Ana, Julia e demais membros da comunidade.
       </p>
 
-      <TextArea>
-        <p>
-          Situada no limite entre as paróquias de Nossa Senhora da Esperança e
-          de São Sebastião, a Área Pastoral ficou sob os cuidados do Padre
-          Francisco Lucas de Sousa Neto. Sob sua liderança, a comunidade
-          floresceu rapidamente: em apenas dez meses, no dia 9 de junho de 2001,
-          o espaço foi oficialmente elevado a Paróquia do Bem-Aventurado José de
-          Anchieta, tendo Padre Lucas como seu primeiro pároco. Apenas cinco
-          anos após essa emancipação, o antigo e modesto prédio dava lugar ao
-          novo templo.
-        </p>
-        <p>
-          O último passo dessa jornada de emancipação aconteceu no dia 29 de
-          maio de 2005. Sob a liderança de Padre Lucas e com o apoio de
-          missionários dedicados, a comunidade concretizou o sonho de possuir um
-          templo próprio.
-        </p>
-      </TextArea>
+      <div className="w-full mb-6">
+        <TextArea>
+          <p>
+            Situada no limite entre as paróquias de Nossa Senhora da Esperança e
+            de São Sebastião, a Área Pastoral ficou sob os cuidados do Padre
+            Francisco Lucas de Sousa Neto. Sob sua liderança, a comunidade
+            floresceu rapidamente: em apenas dez meses, no dia 9 de junho de 2001,
+            o espaço foi oficialmente elevado a Paróquia do Bem-Aventurado José de
+            Anchieta, tendo Padre Lucas como seu primeiro pároco. Apenas cinco
+            anos após essa emancipação, o antigo e modesto prédio dava lugar ao
+            novo templo.
+          </p>
+          <p>
+            O último passo dessa jornada de emancipação aconteceu no dia 29 de
+            maio de 2005. Sob a liderança de Padre Lucas e com o apoio de
+            missionários dedicados, a comunidade concretizou o sonho de possuir um
+            templo próprio.
+          </p>
+        </TextArea>
+      </div>
 
       <ImageFrame src="/images/section2/picture9.webp" alt="Padre  Cura" />
 
@@ -70,23 +73,25 @@ export default function Part2() {
         2012.
       </p>
 
-      <TextArea>
-        <p>
-          Em 14 de Janeiro de 2012, padre Lucas como é mais conhecido, celebrou
-          a missa com fortes dores. Mesmo assim conseguiu terminar a celebração,
-          logo após foi ao hospital onde foi diagnosticado com pancreatite aguda
-          ficando três meses hospitalizado entre a vida e a morte.
-        </p>
-        <p>
-          Os médicos já diziam que tudo que podiam fazer tinham feito e que ele
-          estava nas mãos de Deus a espera de um milagre.
-        </p>
-        <p>
-          E para honra e gloria de Deus, o milagre aconteceu. O padre começou a
-          reagir a cada dia, ate chegar a receber alta. Tendo assim uma CURA
-          MILAGROSA.
-        </p>
-      </TextArea>
+      <div className="w-full mb-6">
+        <TextArea>
+          <p>
+            Em 14 de Janeiro de 2012, padre Lucas como é mais conhecido, celebrou
+            a missa com fortes dores. Mesmo assim conseguiu terminar a celebração,
+            logo após foi ao hospital onde foi diagnosticado com pancreatite aguda
+            ficando três meses hospitalizado entre a vida e a morte.
+          </p>
+          <p>
+            Os médicos já diziam que tudo que podiam fazer tinham feito e que ele
+            estava nas mãos de Deus a espera de um milagre.
+          </p>
+          <p>
+            E para honra e gloria de Deus, o milagre aconteceu. O padre começou a
+            reagir a cada dia, ate chegar a receber alta. Tendo assim uma CURA
+            MILAGROSA.
+          </p>
+        </TextArea>
+      </div>
 
       <ImageFrame
         src="/images/section2/picture10.webp"

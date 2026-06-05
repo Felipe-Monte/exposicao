@@ -4,7 +4,6 @@ import { Check, ChevronLeft, ChevronRight, LogOut } from 'lucide-react';
 import { useState } from 'react';
 import ButtonLogout from './components/ButtonLogout';
 // import Footer from './components/Footer';
-import ImageFrame from './components/ImageFrame';
 import ReadingProgressBar from './components/ReadingProgressBar';
 import WelcomeModal from './components/WelcomeModal';
 import Part1 from './components/sections/Part1';
@@ -66,12 +65,18 @@ export default function Home() {
               </h1>
             </div>
 
-            <ImageFrame
-              src="/images/foto-22.webp"
-              alt="Ubatuba"
-              imageClass="object-contain"
-              marginClass="mb-0"
-            />
+            <div className="relative w-full rounded-2xl md:rounded-3xl overflow-hidden border border-stone-200/50 bg-stone-100/40 mb-0 shadow-lg">
+              <video
+                src="/images/videos/video1.mp4"
+                controls
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full max-h-[320px] sm:max-h-[450px] object-contain"
+                preload="metadata"
+              />
+            </div>
 
             <button
               onClick={handleRevealExposition1}

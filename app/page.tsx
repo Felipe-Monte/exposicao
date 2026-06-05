@@ -10,7 +10,7 @@ import Part1 from './components/sections/Part1';
 import Part2 from './components/sections/Part2';
 import Part3 from './components/sections/Part3';
 import Part4 from './components/sections/Part4';
-import Part5 from './components/sections/Part5';
+// import Part5 from './components/sections/Part5';
 import Section1 from './components/sections/Section1';
 import Section2 from './components/sections/Section2';
 import Section3 from './components/sections/Section3';
@@ -159,17 +159,12 @@ export default function Home() {
                       Pastorais, Movimentos e Serviços
                     </>
                   )}
-                  {exposition === 2 && currentSection === 5 && (
-                    <>
-                      Parte 5
-                    </>
-                  )}
                 </h3>
               </div>
 
               {/* Progress Steps */}
               <div className="flex items-center gap-2 bg-stone-200/50 backdrop-blur-sm px-3 py-1.5 rounded-full border border-stone-200/30">
-                {(exposition === 1 ? [1, 2, 3, 4] : [1, 2, 3, 4, 5]).map((num) => (
+                {[1, 2, 3, 4].map((num) => (
                   <button
                     key={num}
                     onClick={() => changeSection(num)}
@@ -197,7 +192,6 @@ export default function Home() {
               {exposition === 2 && currentSection === 2 && <Part2 />}
               {exposition === 2 && currentSection === 3 && <Part3 />}
               {exposition === 2 && currentSection === 4 && <Part4 />}
-              {exposition === 2 && currentSection === 5 && <Part5 />}
             </article>
 
             {/* Painel de Navegação de Rodapé */}
@@ -223,7 +217,7 @@ export default function Home() {
                 </button>
               )}
 
-              {currentSection < (exposition === 1 ? 4 : 5) ? (
+              {currentSection < 4 ? (
                 <button
                   onClick={() => changeSection(currentSection + 1)}
                   className="w-full sm:w-auto px-6 py-2.5 bg-[#66AFDA] text-white font-medium rounded-full shadow-lg shadow-[#66AFDA]/20 cursor-pointer flex items-center justify-center gap-2"

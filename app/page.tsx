@@ -65,15 +65,14 @@ export default function Home() {
               </h1>
             </div>
 
-            <div className="relative w-full rounded-2xl md:rounded-3xl overflow-hidden border border-stone-200/50 bg-stone-100/40 mb-0 shadow-lg">
+            <div className="relative w-fit rounded-2xl overflow-hidden mb-0">
               <video
                 src="/images/videos/video1.mp4"
-                controls
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="w-full max-h-[320px] sm:max-h-[450px] object-contain"
+                className="w-fit max-h-[320px] sm:max-h-[450px] object-cover"
                 preload="metadata"
               />
             </div>

@@ -49,9 +49,10 @@ export default function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
               </strong>{' '}
               e sua equipe.
             </p>
-            <p className="text-stone-500 font-medium italic pt-4 border-t border-stone-100">
+            <p className="text-stone-500 font-medium italic pt-4 ">
               Na sequência, nós faremos uma viagem na história de nossa Paróquia
-              de 1978 até os dias de hoje.
+              de 1978 até os dias de hoje. Esse resgate foi feito pelos
+              paroquianos de São José de Anchieta .
             </p>
           </div>
         </div>

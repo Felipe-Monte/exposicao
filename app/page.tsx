@@ -156,7 +156,7 @@ export default function Home() {
                   )}
                   {exposition === 2 && currentSection === 4 && (
                     <>
-                      Parte 4
+                      Pastorais, Movimentos e Serviços
                     </>
                   )}
                   {exposition === 2 && currentSection === 5 && (

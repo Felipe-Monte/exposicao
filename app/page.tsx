@@ -109,19 +109,45 @@ export default function Home() {
                   Exposição Virtual
                 </span>
                 <h3 className="font-serif text-lg font-bold text-stone-900">
-                  {exposition === 1 &&
-                    currentSection === 1 &&
-                    'Origens, Vocação e Chegada'}
-                  {exposition === 1 && currentSection === 2 && 'Obras'}
-                  {exposition === 1 &&
-                    currentSection === 3 &&
-                    'Continuação Obras'}
+                  {exposition === 1 && currentSection === 1 && (
+                    <>
+                      Origens, Vocação e Chegada
+                      <p className="font-normal text-stone-500">1534 - 1553</p>
+                    </>
+                  )}
+                  {exposition === 1 && currentSection === 2 && (
+                    <>
+                      Obras
+                      <p className="font-normal text-stone-500">1554 - 1563</p>
+                    </>
+                  )}
+                  {exposition === 1 && currentSection === 3 && (
+                    <>
+                      Continuação Obras
+                      <p className="font-normal text-stone-500">1564 - 1597</p>
+                    </>
+                  )}
                   {exposition === 1 &&
                     currentSection === 4 &&
-                    'Legados, milagres, poemas e oração'}
-                  {exposition === 2 && currentSection === 1 && 'Seção 1'}
-                  {exposition === 2 && currentSection === 2 && 'Seção 2'}
-                  {exposition === 2 && currentSection === 3 && 'Seção 3'}
+                    'Legado, milagres, poemas e oração'}
+                  {exposition === 2 && currentSection === 1 && (
+                    <>
+                      Fundação
+                      <p className="font-normal text-stone-500">1978 - 1999</p>
+                    </>
+                  )}
+                  {exposition === 2 && currentSection === 2 && (
+                    <>
+                      Consolidação
+                      <p className="font-normal text-stone-500">2000 - 2020</p>
+                    </>
+                  )}
+                  {exposition === 2 && currentSection === 3 && (
+                    <>
+                      Protagonismo
+                      <p className="font-normal text-stone-500">2021 - 2026</p>
+                    </>
+                  )}
                 </h3>
               </div>
 

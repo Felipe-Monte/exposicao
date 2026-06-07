@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div
       className={`bg-stone-50 text-stone-800 font-sans antialiased flex flex-col ${
-        !showSection ? 'h-dvh overflow-hidden' : 'min-h-screen justify-between'
+         !showSection ? 'h-dvh overflow-hidden' : 'min-h-screen justify-between'
       }`}
     >
       <WelcomeModal
@@ -57,8 +57,8 @@ export default function Home() {
         }`}
       >
         {!showSection ? (
-          <div className="text-center max-w-2xl mx-auto flex flex-col items-center justify-center gap-6 px-4">
-            <div className="space-y-3">
+          <div className="w-full max-w-4xl mx-auto flex flex-col items-center justify-center gap-8 px-4">
+            <div className="space-y-3 text-center">
               <span className="block text-xs uppercase tracking-widest text-[#66AFDA] font-semibold font-sans">
                 Exposição Virtual
               </span>
@@ -67,36 +67,40 @@ export default function Home() {
               </h1>
             </div>
 
-            <div className="relative w-fit rounded-2xl overflow-hidden mb-0">
-              <video
-                src="/images/videos/video1.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-fit max-h-[320px] sm:max-h-[450px] object-cover"
-                preload="metadata"
-              />
-            </div>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 w-full">
+              <div className="relative w-fit rounded-2xl overflow-hidden shadow-lg border border-stone-200/50">
+                <video
+                  src="/images/videos/video1.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-fit max-h-[320px] sm:max-h-[400px] object-cover"
+                  preload="metadata"
+                />
+              </div>
 
-            <button
-              onClick={handleRevealExposition1}
-              className="w-full sm:w-auto px-8 py-4 bg-[#66AFDA] hover:bg-[#529ec9] text-white font-medium rounded-2xl cursor-pointer flex items-center justify-center gap-3"
-            >
-              <div className="flex flex-col items-center justify-center">
-                <span>Entrar na exposição de</span>
-                <span>São José de Anchieta</span>
+              <div className="flex flex-col gap-4 w-full md:w-auto md:min-w-[320px]">
+                <button
+                  onClick={handleRevealExposition1}
+                  className="w-full px-8 py-5 bg-[#66AFDA] hover:bg-[#529ec9] text-white font-medium rounded-2xl cursor-pointer flex items-center justify-center gap-3 transition-all duration-200 shadow-md hover:shadow-lg shadow-[#66AFDA]/15 hover:-translate-y-0.5 active:translate-y-0"
+                >
+                  <div className="flex flex-col items-center justify-center text-center">
+                    <span className="text-xs uppercase tracking-wider opacity-90 font-semibold mb-1">Entrar na exposição de</span>
+                    <span className="text-base font-bold">São José de Anchieta</span>
+                  </div>
+                </button>
+                <button
+                  onClick={handleRevealExposition2}
+                  className="w-full px-8 py-5 bg-[#66AFDA] hover:bg-[#529ec9] text-white font-medium rounded-2xl cursor-pointer flex items-center justify-center gap-3 transition-all duration-200 shadow-md hover:shadow-lg shadow-[#66AFDA]/15 hover:-translate-y-0.5 active:translate-y-0"
+                >
+                  <div className="flex flex-col items-center justify-center text-center">
+                    <span className="text-xs uppercase tracking-wider opacity-90 font-semibold mb-1">Entrar na exposição da</span>
+                    <span className="text-base font-bold">História da paróquia</span>
+                  </div>
+                </button>
               </div>
-            </button>
-            <button
-              onClick={handleRevealExposition2}
-              className="w-full sm:w-auto px-8 py-4 bg-[#66AFDA] hover:bg-[#529ec9] text-white font-medium rounded-2xl cursor-pointer flex items-center justify-center gap-3"
-            >
-              <div className="flex flex-col items-center justify-center">
-                <span>Entrar na exposição da</span>
-                <span>História da paróquia</span>
-              </div>
-            </button>
+            </div>
           </div>
         ) : (
           <div className="w-full flex flex-col items-center gap-6 relative">
